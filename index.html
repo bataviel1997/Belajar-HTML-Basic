@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Home</title>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <!--
       Need a visual blank slate?
-      Remove all code in `styles.css`!
+      Remove all code in styles.css!
     -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
@@ -14,10 +14,58 @@
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <a href="/success.html">Success page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Form pendafataran Jvalley</h1>
+      <form autocomplete="off" action="success.html">
+        <div>
+          <label for="name">Nama lengkap :</label>
+          <input required id="name" type="text" placeholder="Nama" />
+        </div>
+
+        <div>
+          <label for="e-mail">E-mail :</label>
+          <input required id="email" type="email" placeholder="Email" />
+        </div>
+
+        <div>
+          <label for="phone">Nomor telephone : </label>
+          <input required id="phone" type="tel" placeholder="No telepon" />
+        </div>
+
+        <div>
+          <label for="password">Password :</label>
+          <input
+            required
+            id="password"
+            type="password"
+            placeholder="Masukan password"
+          />
+        </div>
+
+        <div>
+          <label for="address">Alamat :</label>
+          <input required id="address" type="text" placeholder="Alamat" />
+        </div>
+
+        <div>
+          <label for="description">Pengalaman diri :</label>
+          <textarea
+            required
+            id="description"
+            type="text"
+            placeholder="Pengalaman kerja"
+            cols="35"
+            rows="5"
+          ></textarea>
+        </div>
+        <div>
+          <button>Daftar sekarang</button>
+        </div>
+      </form>
     </main>
+
+    <footer>copyright PT Bootcamp 9 on 2022 by Jvalley.</footer>
   </body>
 </html>
